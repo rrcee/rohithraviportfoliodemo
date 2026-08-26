@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif-editorial: "Cormorant Garamond", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-sans: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-mono: "SF Mono", ui-monospace, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+  --color-primary: var(--primary);
+  --color-primary-text: var(--primary-text);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+  --color-secondary: var(--secondary);
+  --color-inverse: var(--inverse);
+  --color-inverse-text: var(--inverse-text);
+  --color-inverse-border: var(--inverse-border);
+}
+
+@layer base {
+  :root {
+    --primary: #FBFBFA;
+    --primary-text: #111111;
+    --muted: #787774;
+    --border: #EAEAEA;
+    --secondary: #F7F6F3;
+    --inverse: #111111;
+    --inverse-text: #FFFFFF;
+    --inverse-border: rgba(255, 255, 255, 0.1);
+  }
+  
+  .dark {
+    --primary: #0A0A0A;
+    --primary-text: #EDEDED;
+    --muted: #888888;
+    --border: #222222;
+    --secondary: #121212;
+    --inverse: #EAEAEA;
+    --inverse-text: #111111;
+    --inverse-border: rgba(0, 0, 0, 0.1);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply antialiased text-primary-text bg-primary selection:bg-primary-text selection:text-inverse-text;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  /* Global accessibility focus ring */
+  *:focus-visible {
+    outline: 2px solid var(--primary-text);
+    outline-offset: 2px;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+}
+
+@layer utilities {
+  .gpu-accelerate {
+    transform: translateZ(0);
+    will-change: transform;
+    backface-visibility: hidden;
+  }
+  
+  /* Authentic Apple HIG Vibrancy */
+  .apple-glass {
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+  }
+}
+
+
+
+/* Base custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--primary);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--muted);
+}
