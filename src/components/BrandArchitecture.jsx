@@ -29,7 +29,7 @@ export default function BrandArchitecture() {
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.2 }}
-            transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+            transition={{ type: "spring", stiffness: 90, damping: 20, mass: 1 }}
             className="md:col-span-6 flex flex-col group"
           >
             <div className="relative aspect-[4/5] overflow-hidden mb-10 bg-border">
@@ -38,7 +38,7 @@ export default function BrandArchitecture() {
                 alt="U4U Concepts - Kerala Wedding Photography"
                 loading="lazy"
                 decoding="async"
-                className="w-full h-full object-cover grayscale-[10%] group-hover:grayscale-0 group-hover:scale-105 transition-all duration-[1.2s] ease-[0.16,1,0.3,1] mix-blend-multiply ring-1 ring-black/10"
+                className="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-[1.2s] ease-[0.16,1,0.3,1] mix-blend-multiply ring-1 ring-black/10"
               />
             </div>
 
@@ -80,7 +80,7 @@ export default function BrandArchitecture() {
                 alt="MTLC - Destination Wedding Photography"
                 loading="lazy"
                 decoding="async"
-                className="w-full h-full object-cover grayscale-[30%] group-hover:grayscale-0 group-hover:scale-105 transition-all duration-[1.2s] ease-[0.16,1,0.3,1] mix-blend-multiply ring-1 ring-black/10"
+                className="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-[1.2s] ease-[0.16,1,0.3,1] mix-blend-multiply ring-1 ring-black/10"
               />
             </div>
 

@@ -50,7 +50,7 @@ export default function Packages() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.1 }}
-          transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
+          transition={{ type: "spring", stiffness: 100, damping: 20, mass: 1 }}
           className="bg-inverse text-inverse-text p-8 sm:p-16 lg:p-20 rounded-[2rem] grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 mb-16"
         >
           <div>
@@ -91,7 +91,7 @@ export default function Packages() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.1 }}
-              transition={{ duration: 0.5, delay: index * 0.1, ease: [0.16, 1, 0.3, 1] }}
+              transition={{ type: "spring", stiffness: 100, damping: 20, mass: 1, delay: index * 0.1 }}
               className="flex flex-col group"
             >
               <div className="text-[10px] uppercase tracking-[0.2em] font-mono text-muted mb-4">

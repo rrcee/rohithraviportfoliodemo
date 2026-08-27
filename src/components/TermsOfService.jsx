@@ -17,16 +17,16 @@ export default function TermsOfService() {
         </h1>
         <div className="space-y-8 text-sm leading-relaxed text-muted max-w-2xl">
           <p className="font-mono text-[10px] uppercase tracking-widest">Last updated: {new Date().getFullYear()}</p>
-          <p>By booking Rohith Ravi Photography (including U4U Concepts and MTLC Destinations), you agree to the following terms.</p>
+          <p>By booking Rohith Ravi Photography (including U4U Concepts and MTLC Destinations), you agree to these terms.</p>
           
           <h2 className="text-xl font-bold text-primary-text uppercase mt-12 mb-4 tracking-tight">Bookings & Payments</h2>
-          <p>A non-refundable retainer is required to secure your date. The remaining balance is due as outlined in your specific contract prior to the event.</p>
+          <p>You secure your date with a non-refundable retainer. The remaining balance is due before the event, as outlined in your contract.</p>
           
           <h2 className="text-xl font-bold text-primary-text uppercase mt-12 mb-4 tracking-tight">Deliverables</h2>
-          <p>Delivery timelines vary depending on the package selected. Standard photography delivery is typically 4-8 weeks. Raw files are not provided unless explicitly agreed upon in writing.</p>
+          <p>Delivery timelines depend on your package. We usually deliver standard photography in 4 to 8 weeks. We do not provide raw files unless we agree in writing.</p>
           
           <h2 className="text-xl font-bold text-primary-text uppercase mt-12 mb-4 tracking-tight">Copyright</h2>
-          <p>Rohith Ravi retains the copyright to all images and footage. Clients receive a license for personal use and printing. We reserve the right to use the content for portfolio and marketing purposes unless a non-disclosure agreement (NDA) is signed prior to the event.</p>
+          <p>Rohith Ravi retains the copyright to all images and footage. You receive a license for personal use and printing. We use the content for our portfolio and marketing unless you sign an NDA before the event.</p>
         </div>
       </main>
       <Footer />

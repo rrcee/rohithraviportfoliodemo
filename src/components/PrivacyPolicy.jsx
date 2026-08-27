@@ -17,13 +17,13 @@ export default function PrivacyPolicy() {
         </h1>
         <div className="space-y-8 text-sm leading-relaxed text-muted max-w-2xl">
           <p className="font-mono text-[10px] uppercase tracking-widest">Last updated: {new Date().getFullYear()}</p>
-          <p>We respect your privacy. Any information collected through this website, such as your name, email, and wedding details, is used strictly for communication regarding our photography services. We do not sell or share your data with third parties.</p>
+          <p>We use the name, email, and wedding details you share on this site strictly to discuss our photography services. We never sell or share your data with third parties.</p>
           
           <h2 className="text-xl font-bold text-primary-text uppercase mt-12 mb-4 tracking-tight">Data Collection</h2>
-          <p>We collect information you voluntarily provide when filling out the contact form or reaching out via WhatsApp. This includes contact details and event specifics required to provide an accurate quote.</p>
+          <p>We collect the contact and event details you share via the contact form or WhatsApp so we can give you an accurate quote.</p>
           
           <h2 className="text-xl font-bold text-primary-text uppercase mt-12 mb-4 tracking-tight">Cookies</h2>
-          <p>This portfolio uses minimal cookies strictly for functional purposes. We do not use intrusive third-party tracking scripts.</p>
+          <p>This site uses functional cookies only. We do not run third-party tracking scripts.</p>
         </div>
       </main>
       <Footer />

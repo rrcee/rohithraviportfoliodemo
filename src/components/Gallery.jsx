@@ -71,7 +71,7 @@ export default function Gallery({ activeBrand, setActiveBrand }) {
                 alt={item.title}
                 loading="lazy"
                 decoding="async"
-                className="relative z-10 w-full h-full object-cover rounded-sm grayscale-[20%] group-hover:grayscale-0 transition-all duration-700 mix-blend-multiply ring-1 ring-black/10"
+                className="relative z-10 w-full h-full object-cover rounded-sm grayscale group-hover:grayscale-0 transition-all duration-700 mix-blend-multiply ring-1 ring-black/10"
               />
               <div className="mt-4 flex justify-between items-start font-mono text-[10px] uppercase tracking-widest text-muted">
                 <span>0{item.id} // {item.title}</span>
@@ -88,7 +88,7 @@ export default function Gallery({ activeBrand, setActiveBrand }) {
                 alt={item.title}
                 loading="lazy"
                 decoding="async"
-                className="relative z-10 w-full h-full object-cover rounded-sm grayscale-[20%] group-hover:grayscale-0 transition-all duration-700 mix-blend-multiply ring-1 ring-black/10"
+                className="relative z-10 w-full h-full object-cover rounded-sm grayscale group-hover:grayscale-0 transition-all duration-700 mix-blend-multiply ring-1 ring-black/10"
               />
               <div className="mt-4 flex justify-between items-start font-mono text-[10px] uppercase tracking-widest text-muted">
                 <span>0{item.id} // {item.title}</span>
@@ -111,7 +111,7 @@ export default function Gallery({ activeBrand, setActiveBrand }) {
                 alt={item.title}
                 loading="lazy"
                 decoding="async"
-                className="relative z-10 w-full h-full object-cover rounded-sm grayscale-[20%] group-hover:grayscale-0 transition-all duration-700 mix-blend-multiply"
+                className="relative z-10 w-full h-full object-cover rounded-sm grayscale group-hover:grayscale-0 transition-all duration-700 mix-blend-multiply"
               />
               <div className="mt-4 flex justify-between items-start font-mono text-[10px] uppercase tracking-widest text-muted">
                 <span>0{item.id} // {item.title}</span>
@@ -128,7 +128,7 @@ export default function Gallery({ activeBrand, setActiveBrand }) {
                 alt={item.title}
                 loading="lazy"
                 decoding="async"
-                className="relative z-10 w-full h-full object-cover rounded-sm grayscale-[20%] group-hover:grayscale-0 transition-all duration-700 mix-blend-multiply"
+                className="relative z-10 w-full h-full object-cover rounded-sm grayscale group-hover:grayscale-0 transition-all duration-700 mix-blend-multiply"
               />
               <div className="mt-4 flex justify-between items-start font-mono text-[10px] uppercase tracking-widest text-muted">
                 <span>0{item.id} // {item.title}</span>

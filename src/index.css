@@ -40,6 +40,7 @@
 
   html {
     scroll-behavior: smooth;
+    scrollbar-width: none;
   }
   
   body {
@@ -78,18 +79,7 @@
 
 
 
-/* Base custom scrollbar */
+/* Invisible Scrollbar for Edge-to-Edge Immersion */
 ::-webkit-scrollbar {
-  width: 6px;
-  height: 6px;
-}
-::-webkit-scrollbar-track {
-  background: var(--primary);
-}
-::-webkit-scrollbar-thumb {
-  background: var(--border);
-  border-radius: 4px;
-}
-::-webkit-scrollbar-thumb:hover {
-  background: var(--muted);
+  display: none;
 }

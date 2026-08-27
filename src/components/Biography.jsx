@@ -65,7 +65,7 @@ export default function Biography() {
               </p>
               
               <p>
-                The shift to weddings happened after he saw his own wedding photos, shot by Phalgun Polepalli. Realizing the impact of unscripted, honest documentation, he left engineering to shoot weddings full-time.
+                He switched to weddings after seeing his own wedding photos, shot by Phalgun Polepalli. He saw what unscripted, honest documentation could do, and left engineering to shoot full-time.
               </p>
             </div>
 
